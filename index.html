@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Enhanced Form Assignment</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+  <!--  Section 1: Introduction with List -->
+  <section>
+    <h1>Homeboyz</h1>
+    <p>This page demonstrates advanced HTML5 elements and form techniques.</p>
+    <ul>
+      <li>Organized content with lists and tables</li>
+      <li>Embedded media (image, audio, video)</li>
+      <li>Accessible and validated forms</li>
+    </ul>
+  </section>
+
+  <!--  Section 2: Table Demo -->
+  <section>
+    <h2>Club Stats Table</h2>
+    <table border="1">
+      <caption>Kenyan Rugby Club Overview</caption>
+      <thead>
+        <tr>
+          <th>Club</th>
+          <th>Founded</th>
+          <th>City</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Homeboyz RFC</td>
+          <td>2009</td>
+          <td>Nairobi</td>
+        </tr>
+        <tr>
+          <td>Nondiscript RFC</td>
+          <td>1923</td>
+          <td>Nairobi</td>
+        </tr>
+        <tr>
+          <td>Nakuru RFC</td>
+          <td>1985</td>
+          <td>Nakuru</td>
+        </tr>
+        <tr>
+          <td>KCB RFC</td>
+          <td>2009</td>
+          <td>Nairobi</td>
+        </tr>
+        <tr>
+          <td>Kabras RFC</td>
+          <td>1989</td>
+          <td>Kakamega</td>
+        </tr>
+        <tr>
+          <td>Harlequins RFC</td>
+          <td>1923</td>
+          <td>Nairobi</td>
+        </tr>
+        <tr>
+          <td>Impala RFC</td>
+          <td>1930</td>
+          <td>Nairobi</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!--  Section 3: Embedded Media -->
+  <section>
+    <h2>Multimedia Snippets</h2>
+    <img src="Images/H3.jpg" alt="Rugby pitch" width="300">
+    <audio controls src="Audio/chant.mp3"></audio>
+    <video controls width="320" src="videos/Download.mp4"></video>
+  </section>
+
+  <!--  Section 4: Enhanced Form -->
+  <section>
+    <h2>Join Our Community</h2>
+    <form action="#" method="post" autocomplete="on">
+
+      <fieldset>
+        <legend>Personal Info</legend>
+
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="John Doe" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+        <label for="pwd">Password:</label>
+        <input type="password" id="pwd" name="pwd" minlength="6" required>
+
+      </fieldset>
+
+      <fieldset>
+        <legend>Preferences</legend>
+
+        <label for="club">Select Club:</label>
+        <select id="club" name="club" required>
+          <option value="">--Choose--</option>
+          <option value="homeboyz">Homeboyz RFC</option>
+          <option value="nakuru">Nakuru RFC</option>
+          <option value="harlequins">Harlequins RFC</option>
+          <option value="KCB">KCB RFC</option>
+          <option value="kabras">Kabras RFC</option>
+          <option value="impala">Impala RFC</option>
+          <option value="nondiscript">Nondiscript RFC</option>
+        </select>
+
+        <label for="fav-position">Favorite Position:</label>
+        <input type="text" id="fav-position" name="fav-position" pattern="[A-Za-z\s]+" placeholder="Fly-half" required>
+
+        <label>
+          <input type="checkbox" name="subscribe" checked readonly>
+          Subscribe to updates 
+        </label>
+
+      </fieldset>
+
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+</body>
+</html>
